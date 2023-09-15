@@ -23,23 +23,7 @@ public class Main {
 			System.out.println("Rectangle " + (i + 1) + " area: " + rectangles[i].calcolaArea());
 			System.out.println("Rectangle " + (i + 1) + " perimeter: " + rectangles[i].calcolaPerimetro());
 			
-			for (int j = 0; j < rectangles[i].height; j++) {
-				for (int k = 0; k < rectangles[i].base; k++) {
-					if (j == 0 || j == rectangles[i].height - 1) {
-						if (k != rectangles[i].base - 1) {
-							System.out.print("0");
-						} else {
-							System.out.print("0\n");
-						}
-					} else if (k == 0) {
-						System.out.print("0");
-					} else if (k == rectangles[i].base - 1) {
-						System.out.print("0\n");
-					} else {
-						System.out.print(" ");
-					}
-				}
-			}
+			rectangles[i].disegna();
 			
 			System.out.println("\n\n");
 		}
