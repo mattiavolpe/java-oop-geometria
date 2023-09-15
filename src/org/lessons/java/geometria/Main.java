@@ -17,6 +17,8 @@ public class Main {
 			rectangles[i - 1] = new Rettangolo(base, height);
 		}
 		
+		sc.close();
+		
 		for (byte i = 0; i < rectangles.length; i++) {
 			System.out.println("\nRectangle " + (i + 1) + " base: " + rectangles[i].base);
 			System.out.println("Rectangle " + (i + 1) + " height: " + rectangles[i].height);
